@@ -1,11 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-.conteiner div {
-/*     background: #85c0d3; */
-    background-image: url(../img/alex-perez-wEgR12N01Tk-unsplash.jpg);
-    padding: 1em;
-    border: .0625rem solid #123001;
-    object-fit: cover;
-} 
 
 /* div:hover{ }  funcion que permite borde cuando paso el cursor */
 
@@ -23,18 +21,16 @@ body{
     gap: 1em;
     width: 100%;
     height: 50%;
-    padding-top: 20px;
+    padding-top: 30px;
     
     
 }
 
 div p{
-    /*     align-self: center; */
     justify-items: center;
     align-items: center;
 
 }
-
 
 .hombre-regando{
     display: grid;
@@ -43,21 +39,18 @@ div p{
     grid-row: 1/2;
     gap: 3.125rem;
 
+} 
+
+.hombre-regando img{
+    width: 300px;
+    height: 310px;
+    margin-left: 110px;
+    margin-top: 20px;
 }
 
-.hombre-regandoa1{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column: 1/3;
-    grid-row: 2/3;
-    gap: 3.125rem
 
-}
 
 .diego{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column: 3/4;
     align-items: center;
     grid-row: 1/3;
     justify-items: center;
@@ -65,27 +58,8 @@ div p{
 
 }
 
-.hombre-regando {
-    width: 100%;
-    height: 350px;
-}
-
-.hombre-regando img{
-    width: 300px;
-    padding-left: 10px;
-}
-
-.diego img{
-    width: 100%;
-    height: 100%;
-}
-.hombre-regandoa1 img{
-    width: 100%;
-    height: 350px;
-}
-
 .header{
-    background: #83c5c7;
+    background: #83c5c79f;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,13 +128,27 @@ a{
 
 .footer {
     display: flex;
-    background-color: #83c5c7;
+    background-color: #83c5c7a9;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
     padding: 5px; 
     flex-direction: colu;
 }
+
+/* .grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: space-between;
+    background-color: lightseagreen;
+} */
+.a2{
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+}
+
+
 .ul{
     list-style: none;
 }
@@ -185,6 +173,27 @@ main{
     
 }
 
+.carousel-inner{
+    padding: 40px;
+    margin-top: 100px;
+}
+.h4{
+    background-color: #83c5c7a9;
+/*     align-items: center;
+    justify-self:flex-end; */
+    align-content: center;
+}
+
+.card{
+    margin-left: 25px;
+    background-image: url(../img/cesped.jpg);
+    background-repeat: repeat;
+    font-size: 30px;
+    color: #010f0ffb;
+}
+
+
+/* desde acá viene NOSOTROS */
 
 .nosotros{
     display: flex;
@@ -287,6 +296,8 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    font-size: 25px;
 }
 .contacto2{
     display: grid;
@@ -298,6 +309,9 @@ ul li {
 .contacto2 .div1{
     grid-column: 3/4;
     grid-row: 1/2;
+    padding: 15px;
+    margin: 15px;
+    row-gap: 25px;
 }
 .contacto2 .div2{
     grid-column: 3/4;
