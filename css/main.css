@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,11 +7,11 @@
 
 /* div:hover{ }  funcion que permite borde cuando paso el cursor */
 
-body{
+body {
     background-image: url(../img/alex-perez-wEgR12N01Tk-unsplash.jpg);
     font-family: 'Montserrat', sans-serif;
     color: #64021f;
-    
+
 }
 
 .conteiner {
@@ -22,26 +22,26 @@ body{
     width: 100%;
     height: 50%;
     padding-top: 30px;
-    
-    
+
+
 }
 
-div p{
+div p {
     justify-items: center;
     align-items: center;
 
 }
 
-.hombre-regando{
+.hombre-regando {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column: 1/3;
     grid-row: 1/2;
     gap: 3.125rem;
 
-} 
+}
 
-.hombre-regando img{
+.hombre-regando img {
     width: 300px;
     height: 310px;
     margin-left: 110px;
@@ -50,40 +50,36 @@ div p{
 
 
 
-.diego{
+.diego {
     align-items: center;
     grid-row: 1/3;
     justify-items: center;
     gap: 32px
-
 }
 
-.header{
-    background: #83c5c79f;
+.header {
+    background-color: #83c5c7a9;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 27px;
-    border: 10px;
 }
 
-p{
+p {
     font-size: 18px;
-    
 }
-a{
+
+a {
     font-size: 23px;
     text-decoration: none;
 }
 
-.navbar{
+.navbar {
     display: flex;
     list-style: none;
-/*     padding: 15px; */
-    gap: 30px;
+    padding: 15px;
 }
 
-.navbar li a{
+.navbar li a {
     text-decoration: none;
     padding: 10px;
     font-size: 26px;
@@ -93,36 +89,40 @@ a{
 .galeria {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2,25%);
+    grid-template-columns: repeat(2, 25%);
     grid-template-rows: 200px 200px 200px;
     grid-template-areas:
-    "div2 div1 div3"
-    "div2 div1 div3"
-    "div2 div4 div4";
-    justify-content:center;
+        "div2 div1 div3"
+        "div2 div1 div3"
+        "div2 div4 div4";
+    justify-content: center;
     gap: .625rem;
 }
 
 .galeria div {
     width: 100%;
     height: 100%;
-    
+
 }
-.galeria div img{
+
+.galeria div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     padding: 25pxs;
 }
-.div1{
+
+.div1 {
     grid-area: div2;
     width: 50%;
     height: 50%;
 }
-.div2{
+
+.div2 {
     grid-area: div1;
 }
-.div3{
+
+.div3 {
     grid-area: div4;
 }
 
@@ -131,60 +131,52 @@ a{
     background-color: #83c5c7a9;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
-    padding: 5px; 
-    flex-direction: colu;
+    padding: 5px;
+
 }
 
-/* .grid-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    justify-content: space-between;
-    background-color: lightseagreen;
-} */
-.a2{
+
+.a2 {
     display: flex;
     flex-direction: row;
     justify-items: flex-end;
 }
 
 
-.ul{
+.ul {
     list-style: none;
 }
 
 
-.logos{
-    display: grid;
-    justify-self:space-between;
+.logos {
+    /*  display: grid;
+    justify-self: space-between; */
     align-self: center;
-
-
 }
-.tel{
-    display: grid;
-    justify-self:end;
+
+.tel {
     align-self: center;
-
-
 }
-main{
+
+
+main {
     padding-top: 5px;
-    
+
 }
 
-.carousel-inner{
+.carousel-inner {
     padding: 40px;
     margin-top: 100px;
 }
-.h4{
+
+.h4 {
     background-color: #83c5c7a9;
-/*     align-items: center;
+    /*     align-items: center;
     justify-self:flex-end; */
     align-content: center;
 }
 
-.card{
+.card {
     margin-left: 25px;
     background-image: url(../img/cesped.jpg);
     background-repeat: repeat;
@@ -195,7 +187,7 @@ main{
 
 /* desde acá viene NOSOTROS */
 
-.nosotros{
+.nosotros {
     display: flex;
     justify-content: center;
     gap: .9375rem;
@@ -206,20 +198,23 @@ main{
 }
 
 
-.nuestrosproyectos{
+.nuestrosproyectos {
     align-items: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
 }
-.nuestrosproyectos h1{
+
+.nuestrosproyectos h1 {
     padding: 30px;
 }
-.nuestrosproyectos h2{
+
+.nuestrosproyectos h2 {
     padding: 30px;
 }
-.proyectos{
+
+.proyectos {
     background: url(../img/alex-perez-wEgR12N01Tk-unsplash.jpg);
     width: 100%;
     margin: 1 auto;
@@ -235,7 +230,8 @@ main{
     background: url(../img/alex-perez-wEgR12N01Tk-unsplash.jpg);
     padding: 10px;
 }
-.proyectos .proyectos1{
+
+.proyectos .proyectos1 {
     grid-column: 1/4;
     grid-row: 1/3;
 }
@@ -258,32 +254,34 @@ main{
     height: 100%;
 
 }
+
 .medios-de-pago {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 50px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     color: #64021f;
     gap: 15px
 }
 
 .posnet {
     grid-column: 1/2;
-    width: 90%;
+
 
 }
-.medios-de-pago2{
-    grid-column: 5/6;
-}
 
-.medios-de-pago3{
+.medios-de-pago2 {
     grid-column: 3/4;
-    margin-top: 0px;
-    grid-row: 1;
 }
 
-.medios-de-pago p{
+.medios-de-pago3 {
+    grid-column: 2/3;
+
+
+}
+
+.medios-de-pago p {
     font-size: 24px;
 }
 
@@ -292,6 +290,7 @@ ul li {
     padding: 15px;
     font-size: 24px;
 }
+
 .contacto {
     display: flex;
     justify-content: center;
@@ -299,84 +298,162 @@ ul li {
     margin-top: 30px;
     font-size: 25px;
 }
-.contacto2{
+
+.contacto2 {
     display: grid;
     padding: 120px;
     grid-template-areas: repeat(4, 1fr) / repeat(3, 1fr);
+    gap: 50px;
 
 }
 
-.contacto2 .div1{
+.contacto2 .div1 {
     grid-column: 3/4;
     grid-row: 1/2;
     padding: 15px;
     margin: 15px;
     row-gap: 25px;
 }
-.contacto2 .div2{
+
+.contacto2 .div2 {
     grid-column: 3/4;
     /* grid-row: 4/4; */
 }
-.contacto2 .imgcontacto{
+
+.contacto2 .imgcontacto {
     grid-column: 1/3;
     gap: 6.25rem;
 }
 
-.imgcontacto{
+.imgcontacto {
     height: 100%;
     width: 100%;
 }
 
-@media(max-width:64rem){
 
-body{
-    background-image: url(https://images.unsplash.com/photo-1689874099574-b2c02629348b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60);
-            
+
+
+
+@media(max-width:64rem) {
+    .medios-de-pago2 p {
+        font-size: 15px;
+        border: .3125rem solid black;
+        padding: 5px;
+
+        p {
+            font-size: 15px;
+        }
+
+        .conteiner div img {
+            display: none;
+        }
+
+        .galeria {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px 100%;
+            grid-template-areas:
+                "div1 div3"
+                "div1 div3";
+            justify-content: center;
+            gap: .625rem;
+        }
+
+        .galeria .div4 img {
+            display: none;
+        }
+
+        .galeria .div2 img {
+            display: none;
+        }
     }
-p{
-    font-size: 15px;
-}
-.conteiner div img{
-    display: none;
-}
 
-.galeria{
-    grid-template-columns: repeat(2,25%);
-    grid-template-rows: 300px 300%;
-    grid-template-areas:
-    "div1 div3"
-    "div1 div3"
-    "div1 div3";
-    justify-content:center;
-    gap: .625rem;
-}
+    .medios-de-pago {
+        gap: 35px;
+    }
 
-.galeria .div4 img{
-    display: none;
-}
-.galeria .div2 img{
-    display: none;
-}
 
-}
-@media(max-width: 48rem){
+    .contacto {
+        font-size: 15px;
 
-body{
-background-image: none;
-background-color: aqua;
-font-size: 18px;
-flex-direction: column;
+    }
+
+    .imgcontacto img {
+        width: 450px;
+
+    }
+
+    .contacto2 {
+        display: flex;
+        padding: 25px;
+        gap: 100px;
+
+    }
+
+    .div1 {
+        /*  justify-content: end; */
+        margin-top: 125px;
+        justify-content: space-between;
+    }
 
 }
-.header{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #7fdfc2;
+
+
+@media(max-width: 48rem) {
+
+    .navbar li a {
+        padding: 10PX;
+        font-size: .9375rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .medios-de-pago3 h1 {
+        font-size: 1.25rem;
+    }
+
+    .ul li {
+        font-size: 1.125rem;
+    }
+
+    .posnet img {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+
+    .header img {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+
+    .imgcontacto img {
+        padding-right: 60px;
+        padding-top: 25px;
+    }
 }
 
-.conteiner div img{
-    display: none;
-}
+@media(max-width: 20rem) {
 
+    .body {
+        background-image: url(../img/cesped.jpg);
+    }
+
+    .header {
+        background-color: #83c5c7a9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header img {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+
+    .navbar li a {
+        font-size: .625rem;
+    }
 }
